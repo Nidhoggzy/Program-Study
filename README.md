@@ -1,2 +1,3 @@
 # Program-Study
-To be a Dalao
+1. Java
+2. Python
