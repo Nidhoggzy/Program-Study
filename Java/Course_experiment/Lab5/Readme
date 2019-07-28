@@ -17,3 +17,6 @@ public访问权限的类，既可以被同一个包中的类访问，也可以�
 
 (5).把Grade类和Student类放进cn.edu.szu.csse包中。编写一个测试类，在源代码中用import语句引入cn.edu.szu.csse包中的所有类，并对它们所包含的方法进行测试。
   将Grade类和Student类放进cn.edu.szu.csse包中，测试类中分别声明了一个Grade类的对象和一个Student类的对象，分别对两个类中的方法惊醒测试。
+
+
+NOTE：除第一题代码外，其余代码丢失。
