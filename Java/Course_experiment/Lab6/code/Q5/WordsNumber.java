@@ -4,6 +4,7 @@ import java.util.function.BiConsumer;
 public class WordsNumber {
 
 	public static void main(String[] args) {
+		//should download the page as html file, and then read this file as a string.
 		String str = "[Home]\r\n" + 
 				"\r\n" + 
 				"Publications\r\n" + 
@@ -20,7 +21,7 @@ public class WordsNumber {
 				"paper, slides, code, bibtex\r\n" + 
 				"Mengsi Liu#, Weike Pan#, Miao Liu, Yaofeng Chen, Xiaogang Peng* and Zhong Ming*. (#:co-first author) \r\n" + 
 				"Mixed Similarity Learning for Recommendation with Implicit Feedback [J]. \r\n" + 
-				"Knowledge-Based Systems (0950-7051), 119:178¨C185, 1 March 2017. ESI (Computer Science).\r\n" + 
+				"Knowledge-Based Systems (0950-7051), 119:178â€“185, 1 March 2017. ESI (Computer Science).\r\n" + 
 				"paper, slides, code, data, bibtex\r\n" + 
 				"Weike Pan and Li Chen.\r\n" + 
 				"Group Bayesian Personalized Ranking with Rich Interactions for One-Class Collaborative Filtering [J]. Extended from our IJCAI 2013 paper.\r\n" + 
@@ -40,19 +41,19 @@ public class WordsNumber {
 				"paper\r\n" + 
 				"Weike Pan, Shanchuan Xia, Zhuode Liu, Xiaogang Peng and Zhong Ming*. \r\n" + 
 				"Mixed Factorization for Collaborative Recommendation with Heterogeneous Explicit Feedbacks [J].\r\n" + 
-				"Information Sciences (0020-0255), 332:84¨C93, 1 March 2016. ESI (Computer Science).\r\n" + 
+				"Information Sciences (0020-0255), 332:84â€“93, 1 March 2016. ESI (Computer Science).\r\n" + 
 				"paper, bibtex\r\n" + 
 				"Weike Pan.\r\n" + 
 				"A Survey of Transfer Learning for Collaborative Recommendation with Auxiliary Data [J]. Extended from part of my Ph.D. thesis.\r\n" + 
-				"Neurocomputing (0925-2312), 177:447¨C453, 12 February 2016. ESI (Computer Science).\r\n" + 
+				"Neurocomputing (0925-2312), 177:447â€“453, 12 February 2016. ESI (Computer Science).\r\n" + 
 				"paper, slides, bibtex\r\n" + 
 				"Weike Pan, Zhuode Liu, Zhong Ming*, Hao Zhong, Xin Wang and Congfu Xu. \r\n" + 
 				"Compressed Knowledge Transfer via Factorization Machine for Heterogeneous Collaborative Recommendation [J]. \r\n" + 
-				"Knowledge-Based Systems (0950-7051), 85:234¨C244, September 2015. ESI (Computer Science).\r\n" + 
+				"Knowledge-Based Systems (0950-7051), 85:234â€“244, September 2015. ESI (Computer Science).\r\n" + 
 				"paper, bibtex\r\n" + 
 				"Weike Pan, Hao Zhong, Congfu Xu* and Zhong Ming. \r\n" + 
 				"Adaptive Bayesian Personalized Ranking for Heterogeneous Implicit Feedbacks [J]. \r\n" + 
-				"Knowledge-Based Systems (0950-7051), 73:173¨C180, January 2015. ESI (Computer Science).\r\n" + 
+				"Knowledge-Based Systems (0950-7051), 73:173â€“180, January 2015. ESI (Computer Science).\r\n" + 
 				"paper, bibtex\r\n" + 
 				"Weike Pan and Zhong Ming*. \r\n" + 
 				"Interaction-Rich Transfer Learning for Collaborative Filtering with Heterogeneous User Feedback [J]. \r\n" + 
@@ -68,7 +69,7 @@ public class WordsNumber {
 				"paper, bibtex\r\n" + 
 				"Weike Pan and Qiang Yang*. \r\n" + 
 				"Transfer Learning in Heterogeneous Collaborative Filtering Domains [J]. \r\n" + 
-				"Artificial Intelligence, 197:39¨C55, April 2013. ESI (Computer Science).\r\n" + 
+				"Artificial Intelligence, 197:39â€“55, April 2013. ESI (Computer Science).\r\n" + 
 				"paper, code, bibtex\r\n" + 
 				"Wenliang Zhong, Weike Pan, James T. Kwok and Ivor W. Tsang. \r\n" + 
 				"Incorporating the Loss Function into Discriminative Clustering of Structured Outputs [J]. \r\n" + 
@@ -165,7 +166,7 @@ public class WordsNumber {
 				"paper, bibtex\r\n" + 
 				"Edited Workshop Proceeding\r\n" + 
 				"\r\n" + 
-				"Yong Zheng, Weike Pan, Shaghayegh (Sherry) Sahebi, Ignacio Fern¨¢ndez.\r\n" + 
+				"Yong Zheng, Weike Pan, Shaghayegh (Sherry) Sahebi, Ignacio FernÃ¡ndez.\r\n" + 
 				"The 1st Workshop on Intelligent Recommender Systems by Knowledge Transfer & Learning (RecSysKTL).\r\n" + 
 				"Workshop Editorial. In: Proceedings of the 11th ACM Conference on Recommender Systems (RecSys 2017), Como, Italy, Aug 27-31, 2017.\r\n" + 
 				"paper, bibtex\r\n" + 
@@ -182,8 +183,8 @@ public class WordsNumber {
 				"thesis\r\n" + 
 				"Translation\r\n" + 
 				"\r\n" + 
-				"Iv¨¢n Cantador, Ignacio Fern¨¢ndez-Tob¨ªas, Shlomo Berkovsky and Paolo Cremonesi. Cross-Domain Recommender Systems. Chapter 27 of Recommender Systems Handbook (Second Edition), Springer, 2015.\r\n" + 
-				"·­Òë: ÅËÎ¢¿Æ,Ôø×Ó½Ü. ¿çÁìÓòÍÆ¼öÏµÍ³. ¡¶ÍÆ¼öÏµÍ³£º¼¼Êõ¡¢ÆÀ¹À¼°¸ßĞ§Ëã·¨¡·µÚ27ÕÂ, »úĞµ¹¤Òµ³ö°æÉç, 2016.\r\n" + 
+				"IvÃ¡n Cantador, Ignacio FernÃ¡ndez-TobÃ­as, Shlomo Berkovsky and Paolo Cremonesi. Cross-Domain Recommender Systems. Chapter 27 of Recommender Systems Handbook (Second Edition), Springer, 2015.\r\n" + 
+				"ç¿»è¯‘: æ½˜å¾®ç§‘,æ›¾å­æ°. è·¨é¢†åŸŸæ¨èç³»ç»Ÿ. ã€Šæ¨èç³»ç»Ÿï¼šæŠ€æœ¯ã€è¯„ä¼°åŠé«˜æ•ˆç®—æ³•ã€‹ç¬¬27ç« , æœºæ¢°å·¥ä¸šå‡ºç‰ˆç¤¾, 2016.\r\n" + 
 				"slides\r\n" + 
 				"Last change: September 12, 2017";
 		
