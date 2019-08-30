@@ -1,0 +1,24 @@
+# Translator
+	综述：该程序调用了百度翻译API实现翻译操作。整个界面包括两个JButton组件（切换和翻译）、两个JLabel组件（显示两种语言）、两个 JTextArea组件（输入框和结果框）。实现了简单地布局。
+## Translator类：
+	1. 首先声明了各种组件，在构造方法中分别初始化了这些组件，并设置了相应的大小和位置坐标，并且将各组件添加到相应的容器中。也声明了一个百度翻译API的实例，用于翻译。
+	2. actionPerformed()方法中，分别将各事件绑定到相应的操作，（1）点击exchange按钮时，交换soulan和deslan的值，并且交换from和to的值，实现中英互译的交换。（2）点击translate按钮时，获取输入框中的值，并调用getResult()方法得到翻译结果，并显示在结果文本框。
+	3. getResult()方法中，首先使用API获取翻译的结果JSON格式。事先已经导入了一个提取JSON的包，所以在该方法中声明了JSON对象和数组来提取其中想要的结果字符串。将JSON对象中的键trans_result对应的值转化为JSON数组，然后将trans_result对应的数组转化为JSON对象，使用键“dst”提取目标字符串。然后将其返回。
+	4. 用于测试的main()方法中，先用UIManager将该程序的图形界面适应成当前系统的UI界面，然后声明一个Translator的实例。
+	
+
+# ImageViwer
+	综述：该图片浏览器可以打开各基本格式的图片文件，可以查看图片文件的属性信息，包括路径，大小以及图片格式。打开一个目录后自动加载该目录下的图片文件，形成一个文件列表，可以经由鼠标在左右方点击实现前后张图片的切换。在上方导航栏里也有“上一张”、“下一张”的按钮。
+
+## ImageViwer类：
+	1. 首先声明了各式相应的组件（包括JButton，JMenuBar, JMenu, JMenuItem,等组件），以及ImageIcon的图像图标。然后在构造函数中对各组件进行初始化，设置各组件的大小及位置，实现简单的布局。此外还包括显示图片及相关信息的Show()方法、重写的actionPerformed()方法、响应鼠标事件的方法mouseClicked()方法。
+	2. Show()方法中首先依据获取的文件的大小进行缩放，便于展示在浏览器中。然后用获取的文件初始化showii并将其展示在body区域。然后获取该文件相关属性并显示在footer区域。
+	3. actionPerformed()方法中，对界面的不同事件做出响应。（1）事件为“open”，则从上次打开的目录开始，再有用户选择相应的目录文件。选择文件时，调用了ImageChoose类中的方法对其经行筛选，确保为图片文件。选择之后，就用该文件初始化ImgIco，并调用Show()方法展示图片及信息；（2）事件为“prop”，则设置一个对话框，显示图片的相关属性；（3）事件为“last”，则调用ImageChoose中的getLast()方法，获取文件列表的上一个文件，并显示出来。（4）事件为“next”，则调用ImageChoose中的getNext()方法，获取文件列表的下一个文件，并显示出来。
+	4. 重写的mouseClicked()方法，绑定了鼠标单击的事件。如果鼠标单击图片的右侧，则调用ImageChoose中的getNext()方法，显示下一张图片；如果单击左侧，则调用ImageChoose中的getLast()方法，显示上一张图片。对于其他的鼠标事件本例中并未使用。
+	5. 用于测试的main()方法中，先用UIManager将该程序的图形界面适应成当前系统的UI界面，然后声明一个ImageViewer的实例。
+
+## ImageChoose类：
+	1. 包含了一个静态的List对象，形成图片文件的列表。还包括了getLast()、getNext()、addFile()、myFilter()以及myFileNameFilter()等静态方法（方便在ImageViewer中调用）。List对象作为一个文件列表用于储存目录下的所有图片文件，这样虽然会占用一些内存，但是浏览图片的速度会快一些。
+	2. addFile()方法用于向文件列表中加入图片文件，在打开一个新的目录时，需要将这个新目录下的图片加到文件列表中。形成文件列表后，获取上一张、下一张的方法getLast()、getNext()就很容易实现，依据List对象的下标（index）即可实现。
+	3. 筛选出图片文件的方法myFilter()以及myFileNameFilter()，其中声明了一个对象ff，实现了FileFilter和FileNameFilter接口，其中的accept()方法调用了endsWith()方法，依据文件名的后缀是否为“.jpg”、“.png”、“.bmp”、“.gif”等，来进行筛选出图片文件。
+	4. 在类getFileList中，简单地实现了一个线程，在打开一个图片后，调用该线程自动将该图片目录下的其余图片加入文件列表，实现缓存。
