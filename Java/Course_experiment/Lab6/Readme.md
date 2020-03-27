@@ -56,10 +56,10 @@
     }
 
 ### (2). 抽象类和接口的实验。
-    *(2.1) 定义一个抽象类Human：包含一个成员变量String name；构造方法Human(String name)，用于初始化姓名name；一个抽象方法double sayHello()。
-    *(2.2) 定义三个继承抽象类Human的类，分别命名为Chinese、Japanese和English，在这三个类中重写sayHello()方法，分别输出一句中文、日文和英文的问候；
-    *(2.3) 定义一个测试类HumanTest：创建一个包含3个Human对象的数组，3个Human对象来自Chinese、Japanese和English类，循环调用该数组中的元素的sayHello()方法。
-    *(2.4) 通过一个接口（命名为Human）和三个实现类（命名为Chinese、Japanese和English）来达到如上类似的效果。
+    * (2.1) 定义一个抽象类Human：包含一个成员变量String name；构造方法Human(String name)，用于初始化姓名name；一个抽象方法double sayHello()。
+    * (2.2) 定义三个继承抽象类Human的类，分别命名为Chinese、Japanese和English，在这三个类中重写sayHello()方法，分别输出一句中文、日文和英文的问候；
+    * (2.3) 定义一个测试类HumanTest：创建一个包含3个Human对象的数组，3个Human对象来自Chinese、Japanese和English类，循环调用该数组中的元素的sayHello()方法。
+    * (2.4) 通过一个接口（命名为Human）和三个实现类（命名为Chinese、Japanese和English）来达到如上类似的效果。
 
 ### (3). 编写Java应用程序，计算菜单“北京烤鸭：189元；西芹炒肉：12.9元；酸菜鱼：69元；铁板牛柳：32元”的总价格。
 
